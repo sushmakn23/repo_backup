@@ -1,0 +1,24 @@
+Started by user [8mha:////4OZbS1uGXkVSnLWiJJXfHLHmDGM9KHprUmwBc6hKnddWAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94tLijNxEAAMKkUjBAAAA[0msushma
+Running as SYSTEM
+Building remotely on [8mha:////4E7Tmkm77IuJd1OW8QzHItNF/VCG1JSBlQcXeUn2ThovAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 in workspace /home/ubuntu/workspace/c-project
+The recommended git tool is: NONE
+using credential 45ac1df2-2c87-416c-aec9-761ebcd0a6bf
+ > git rev-parse --resolve-git-dir /home/ubuntu/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sushmakn23/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/sushmakn23/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_SSH to set credentials c-project
+ > git fetch --tags --force --progress -- https://github.com/sushmakn23/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b17807a4fca3f7968477577c20d82ed69aa9d355 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b17807a4fca3f7968477577c20d82ed69aa9d355 # timeout=10
+Commit message: "updated"
+ > git rev-list --no-walk b17807a4fca3f7968477577c20d82ed69aa9d355 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins5727321140979831430.sh
++ cd /var/lib/jenkins/workspace/c-project
+/tmp/jenkins5727321140979831430.sh: 2: cd: can't cd to /var/lib/jenkins/workspace/c-project
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

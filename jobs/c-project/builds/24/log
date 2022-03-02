@@ -1,0 +1,74 @@
+Started by GitHub push by sushmakn23
+Running as SYSTEM
+Building remotely on [8mha:////4E7Tmkm77IuJd1OW8QzHItNF/VCG1JSBlQcXeUn2ThovAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 in workspace /home/ec2-user/workspace/c-project
+The recommended git tool is: NONE
+using credential 9afa6a23-43cb-4599-b759-aa368337e5bc
+ > git rev-parse --resolve-git-dir /home/ec2-user/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/sushmakn23/c-project.git # timeout=10
+Fetching upstream changes from https://github.com/sushmakn23/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+using GIT_SSH to set credentials 
+[INFO] Currently running in a labeled security context
+[INFO] Currently SELinux is 'enforcing' on the host
+ > /usr/bin/chcon --type=ssh_home_t /home/ec2-user/workspace/c-project@tmp/jenkins-gitclient-ssh12448481410954944200.key
+ > git fetch --tags --force --progress -- https://github.com/sushmakn23/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 4fc9579eacc4ee231019cc0be966b6def21d312b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4fc9579eacc4ee231019cc0be966b6def21d312b # timeout=10
+Commit message: "Create nish.c"
+ > git rev-list --no-walk 457ea840799400e7887c2ee53fbfecb98ed0a653 # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins4686819646500395982.sh
++ cd /home/ec2-user/workspace/c-project
++ make
+gcc -c main.c
+main.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ main() {
+ ^~~~
+main.c: In function ‘main’:
+main.c:4:10: warning: implicit declaration of function ‘biggest’ [-Wimplicit-function-declaration]
+          biggest();
+          ^~~~~~~
+main.c:5:10: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+          factorial();
+          ^~~~~~~~~
+main.c:6:9: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+         reverse();
+         ^~~~~~~
+main.c:7:2: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+  palindrome();
+  ^~~~~~~~~~
+main.c:8:2: warning: implicit declaration of function ‘big3’ [-Wimplicit-function-declaration]
+  big3();
+  ^~~~
+main.c:9:2: warning: implicit declaration of function ‘sum2’ [-Wimplicit-function-declaration]
+  sum2();
+  ^~~~
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest()
+ ^~~~~~~
+gcc -c fact.c
+fact.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  factorial() {
+  ^~~~~~~~~
+gcc -c rev.c
+rev.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ reverse()
+ ^~~~~~~
+gcc -c palindrome.c
+palindrome.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ palindrome()
+ ^~~~~~~~~~
+gcc -c big3.c
+big3.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ big3()
+ ^~~~
+gcc -c sum2.c
+sum2.c:4:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ sum2()
+ ^~~~
+gcc -o ABC.exe main.o big2.o fact.o rev.o palindrome.o big3.o sum2.o
+Finished: SUCCESS

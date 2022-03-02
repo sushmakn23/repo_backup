@@ -1,0 +1,31 @@
+Started by user [8mha:////4OZbS1uGXkVSnLWiJJXfHLHmDGM9KHprUmwBc6hKnddWAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL94tLijNxEAAMKkUjBAAAA[0msushma
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-project
+The recommended git tool is: NONE
+using credential 45ac1df2-2c87-416c-aec9-761ebcd0a6bf
+Cloning the remote Git repository
+Cloning repository https://github.com/sushmakn23/c-project.git
+ > git init /var/lib/jenkins/workspace/c-project # timeout=10
+Fetching upstream changes from https://github.com/sushmakn23/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+using GIT_SSH to set credentials c-project
+[INFO] Currently running in a labeled security context
+[INFO] Currently SELinux is 'enforcing' on the host
+ > /usr/bin/chcon --type=ssh_home_t /var/lib/jenkins/workspace/c-project@tmp/jenkins-gitclient-ssh17226774687675432155.key
+ > git fetch --tags --force --progress -- https://github.com/sushmakn23/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/sushmakn23/c-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b17807a4fca3f7968477577c20d82ed69aa9d355 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b17807a4fca3f7968477577c20d82ed69aa9d355 # timeout=10
+Commit message: "updated"
+First time build. Skipping changelog.
+[c-project] $ /bin/sh -xe /tmp/jenkins9351033430663992151.sh
++ cd /var/lib/jenkins/workspace/c-project
++ make
+/tmp/jenkins9351033430663992151.sh: line 4: make: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

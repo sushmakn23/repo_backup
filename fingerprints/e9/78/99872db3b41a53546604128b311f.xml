@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-02-27 09:23:17.6 UTC</timestamp>
+  <md5sum>e97899872db3b41a53546604128b311f</md5sum>
+  <fileName>Credential id=f47c8859-9f0a-4966-bebc-1e58f0f29625 name=ec2-user1</fileName>
+  <usages>
+    <entry>
+      <string>java project</string>
+      <ranges>1-11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
